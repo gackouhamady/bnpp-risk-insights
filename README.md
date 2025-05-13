@@ -12,46 +12,17 @@ Prototype a **DataHub Risk & Customer Insights** for BNP Paribas CoE Data Scienc
 
 ---
 
-## 📅 Detailed 5-day working plan (+ 2 days buffer)
+## 📅 Detailed 5-Day Working Plan (+2 Days Buffer)
 
-
-
-|                                                  Day                                                 | Key tasks                                                      |
-| :--------------------------------------------------------------------------------------------------: | :------------------------------------------------------------- |
-|                                               **Day 1**                                              | - **Init repo & env**: `git init` + `.gitignore` + Python venv |
-| • `requirements.txt` (pandas, numpy, scikit-learn, sqlalchemy, mlflow, fastapi, uvicorn, streamlit…) |                                                                |
-
-* **Data sampling**: simulated CSVs of client accounts, transactions, and KYC file (1,000 rows each) |
-  \| **Day 2** | - **ETL & datamart** (`src/etl.py`):
-  • Extraction CSV → Pandas → cleaning (formats, duplicates)
-  • Loading into local SQLite or Postgres
-  • Creation of fact tables (`transactions`, `events`) and dimensions (`clients`, `accounts`, `time`) |
-  \| **Day 3** | - **Reporting & BI** (`src/reporting.py`):
-  • Prototype Power BI/Tableau dashboard: key KPIs (transaction volume, active portfolio)
-  • Automate CSV exports via Python/VBA for daily refresh |
-  \| **Day 4** | - **Predictive modeling**:
-  • `src/model_default.py` – Logistic Regression for payment default (features: average amount, frequency…)
-  • `src/model_churn.py` – XGBoost to predict churn (features: tenure, average balance…)
-  • Evaluation: AUC, confusion matrix, classification report |
-  \| **Day 5** | - **Anomaly detection** (`src/anomaly.py`):
-  • Isolation Forest on transaction amounts & frequencies
-  • Visualization of outliers in Streamlit
-* **Pipeline & MLOps** (`src/pipeline.py`):
-  • Orchestration ETL → scoring → anomaly → JSON report generation
-  • MLflow experiment tracking (params & metrics) |
-  \| **Day 6** | - **Interface prototype** (`src/app.py`):
-  • Local Streamlit to view dashboards, run scoring & anomaly
-  • FastAPI exposing endpoints `/score_default`, `/detect_anomaly` |
-  \| **Day 7** | - **Documentation & tests**:
-  • `README.md` (installation, usage, Dataiku/GCP migration)
-  • ER diagram in `docs/`
-  • Pytest unit tests for each module
-* **Packaging & delivery**:
-  • Final `requirements.txt` (`pip freeze`)
-  • Dockerfile (base `python:3.10`) for Streamlit + FastAPI app
-  • Commit & push to GitHub + Cloud Run/Vertex AI deployment plan |
-
----
+| **Day**       | **Key Tasks** |
+|---------------|---------------|
+| **Day 1**      | - **Init repo & env**: `git init` + `.gitignore` + Python venv  <br> - `requirements.txt` (pandas, numpy, scikit-learn, sqlalchemy, mlflow, fastapi, uvicorn, streamlit…)  <br> - **Data sampling**: simulated CSVs of client accounts, transactions, and KYC file (1,000 rows each) |
+| **Day 2**      | - **ETL & datamart** (`src/etl.py`):  <br>  • Extraction CSV → Pandas → cleaning (formats, duplicates)  <br>  • Loading into local SQLite or Postgres  <br>  • Creation of fact tables (`transactions`, `events`) and dimensions (`clients`, `accounts`, `time`) |
+| **Day 3**      | - **Reporting & BI** (`src/reporting.py`):  <br>  • Prototype Power BI/Tableau dashboard: key KPIs (transaction volume, active portfolio)  <br>  • Automate CSV exports via Python/VBA for daily refresh |
+| **Day 4**      | - **Predictive modeling**:  <br>  • `src/model_default.py`: Logistic Regression for payment default (features: average amount, frequency…)  <br>  • `src/model_churn.py`: XGBoost to predict churn (features: tenure, average balance…)  <br>  • Evaluation: AUC, confusion matrix, classification report |
+| **Day 5**      | - **Anomaly detection** (`src/anomaly.py`):  <br>  • Isolation Forest on transaction amounts & frequencies  <br>  • Visualization of outliers in Streamlit  <br> - **Pipeline & MLOps** (`src/pipeline.py`):  <br>  • Orchestration ETL → scoring → anomaly → JSON report generation  <br>  • MLflow experiment tracking (params & metrics) |
+| **Day 6** *(Buffer)* | - **Interface prototype** (`src/app.py`):  <br>  • Local Streamlit to view dashboards, run scoring & anomaly  <br>  • FastAPI exposing endpoints `/score_default`, `/detect_anomaly` |
+| **Day 7** *(Buffer)* | - **Documentation & tests**:  <br>  • `README.md` (installation, usage, Dataiku/GCP migration)  <br>  • ER diagram in `docs/`  <br>  • Pytest unit tests for each module  <br> - **Packaging & delivery**:  <br>  • Final `requirements.txt` (`pip freeze`)  <br>  • Dockerfile (base `python:3.10`) for Streamlit + FastAPI app  <br>  • Commit & push to GitHub + Cloud Run/Vertex AI deployment plan |
 
 ## ⚙️ Final Git structure
 
