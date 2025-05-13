@@ -1,0 +1,14 @@
+# requirements.txt
+pandas        # Library for data manipulation and analysis; provides DataFrame structures.
+numpy         # Fundamental package for scientific computing with Python; arrays & linear algebra.
+scikit-learn  # Machine learning library offering classification, regression, clustering algorithms.
+sqlalchemy    # SQL toolkit & Object-Relational Mapper for Python; facilite l’interaction avec la base.
+mlflow        # Plateforme de gestion du cycle de vie ML : suivi d’expériences, packaging & déploiement.
+fastapi       # Framework web ultra-rapide pour la création d’API REST avec Python 3.6+ et type hints.
+uvicorn       # Serveur ASGI performant pour exécuter des applications FastAPI (ou autres frameworks ASGI).
+streamlit     # Framework simple pour créer des applications et dashboards interactifs en Python.
+xgboost       # Bibliothèque optimisée de gradient boosting : modèles performants pour le ML supervisé.
+pytest        # Outil de test Python simple et puissant pour écrire et exécuter des tests unitaires.
+faker         # Bibliothèque pour générer des données factices (fake data) pour les tests et le développement.
+pyodbc        # Connecteur Python pour ODBC, permettant de se connecter à des bases de données via ODBC.
+
