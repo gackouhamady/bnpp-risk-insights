@@ -80,3 +80,56 @@ bnpp-risk-insights/
 ├── requirements.txt
 └── .gitignore
 ```
+
+
+
+## Architecture summary  
+
+``` text
+
+1. Data Sources
+   ├─ Client accounts (CSV)
+   ├─ Transactions (CSV)
+   └─ KYC (CSV)
+
+2. Ingestion & Preparation (ETL)
+   ├─ Extraction (pandas)
+   ├─ Cleaning (formats, duplicates, GDPR)
+   └─ Loading (SQLAlchemy → SQLite/Postgres)
+
+3. Datamart (star schema)
+   ├─ Fact tables
+   │   ├─ transactions
+   │   └─ events
+   └─ Dimension tables
+       ├─ clients
+       ├─ accounts
+       └─ time
+
+4. Storage & Traceability
+   ├─ Optimized SQL database
+   └─ MLflow (tracking runs: parameters, metrics, artifacts)
+
+5. Analytical Modules
+   ├─ Default scoring (logistic regression)
+   ├─ Churn prediction (XGBoost)
+   └─ Anomaly detection (Isolation Forest)
+
+6. MLOps Orchestration
+   ├─ Airflow or batch scripts
+   └─ Pipeline ETL → scoring → anomaly → JSON reports
+
+7. Interfaces
+   ├─ Streamlit (dashboards & manual execution)
+   └─ FastAPI (endpoints `/score_default` & `/detect_anomaly`)
+
+8. Containerization & Deployment
+   ├─ Docker (Python 3.10)
+   └─ Cloud Run / Vertex AI (auto-scaling, monitoring)
+
+9. Quality & Governance
+   ├─ Unit tests (Pytest)
+   ├─ Documentation (README, ER diagram)
+   └─ Git conventions and code reviews
+
+```
