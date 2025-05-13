@@ -2,6 +2,8 @@
 
 Ce document décrit les tâches à réaliser chaque jour pour finaliser le prototype en une semaine.
 
+
+
 ---
 
 ## Jour 1 – Initialisation
@@ -10,6 +12,7 @@ Ce document décrit les tâches à réaliser chaque jour pour finaliser le proto
 * Configuration de l’environnement Python (venv)
 * Création du fichier `requirements.txt` avec les dépendances principales (pandas, numpy, scikit-learn, sqlalchemy, mlflow, fastapi, streamlit…)
 * Génération des jeux de données simulés (CSV pour comptes, transactions, KYC)
+  
 
 ## Jour 2 – ETL & Datamart
 
@@ -18,10 +21,9 @@ Ce document décrit les tâches à réaliser chaque jour pour finaliser le proto
   * Extraction des CSV avec pandas
   * Nettoyage (formats, doublons, valeurs manquantes)
   * Chargement dans SQLite/Postgres via SQLAlchemy
-* Conception du schéma en étoile :
-
-  * Création des tables de faits (`transactions`, `events`)
-  * Création des tables de dimensions (`clients`, `accounts`, `time`)
+  * Conception du schéma en étoile :
+      * Création des tables de faits (`transactions`, `events`)
+      * Création des tables de dimensions (`clients`, `accounts`, `time`)
 
 ## Jour 3 – Reporting & Dashboard
 
