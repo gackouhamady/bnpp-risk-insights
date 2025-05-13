@@ -14,6 +14,8 @@ Prototype a **DataHub Risk & Customer Insights** for BNP Paribas CoE Data Scienc
 
 ## 📅 Detailed 5-day working plan (+ 2 days buffer)
 
+``` text
+
 |                                                  Day                                                 | Key tasks                                                      |
 | :--------------------------------------------------------------------------------------------------: | :------------------------------------------------------------- |
 |                                               **Day 1**                                              | - **Init repo & env**: `git init` + `.gitignore` + Python venv |
@@ -50,6 +52,8 @@ Prototype a **DataHub Risk & Customer Insights** for BNP Paribas CoE Data Scienc
   • Commit & push to GitHub + Cloud Run/Vertex AI deployment plan |
 
 ---
+
+``` 
 
 ## ⚙️ Final Git structure
 
