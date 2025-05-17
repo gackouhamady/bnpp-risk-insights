@@ -12,7 +12,7 @@ Prototype a **DataHub Risk & Customer Insights** :
 
 ---
 
-## 📅 Detailed 5-Day Working Plan (+2 Days Buffer)
+## 📅 Detailed Day Working Plan
 
 | **Day**       | **Key Tasks** |
 |---------------|---------------|
