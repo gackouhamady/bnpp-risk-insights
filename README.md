@@ -42,7 +42,7 @@
 | 4   | - Default scoring (`src/model_default.py`)  <br> - Churn prediction (`src/model_churn.py`)  <br> - AUC, confusion matrix, classification report                  |
 | 5   | - Anomaly detection (`src/anomaly.py`): Isolation Forest & Streamlit UI  <br> - Partial orchestration                                                            |
 | 6   | - Full pipeline (`src/pipeline.py`): ETL → default & churn scoring → anomalies → MLflow → JSON report  <br> - FastAPI endpoints (`src/app.py`)                   |
-| 7   | - Write `README.md`  <br> - ER diagram (`docs/datamart_schema.png`)  <br> - Unit tests (Pytest)  <br> - `Dockerfile` (Python 3.10)  <br> - Cloud deployment plan |
+| 7   | - Write `README.md`  <br> - ER diagram (`docs/datamart_schema.png`)  <br> - Unit tests (Pytest)  <br> - `Dockerfile` (Python 3.10)   |
 
 ---
 
