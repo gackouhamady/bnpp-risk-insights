@@ -122,7 +122,7 @@ bnpp-risk-insights/
    streamlit run src/anomaly.py
    ```
 
-   <img src="docs/anomaly.png" alt="Streamlit Anomaly UI" width="700"/>
+   <img src="anomaly.png" alt="Streamlit Anomaly UI" width="700"/>
 8. **Orchestrate & generate report**
 
    ```bash
