@@ -1,6 +1,6 @@
 # 🚀 DataHub Risk & Customer Insights
 
-**Prototype developed for the BNP Paribas Data Science CoE:**
+
 
 * Data ingestion & preparation
 * Analytics datamart (star schema)
