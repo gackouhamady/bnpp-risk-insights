@@ -1,6 +1,6 @@
 # 🚀 Project Objective
 
-Prototype a **DataHub Risk & Customer Insights** for BNP Paribas CoE Data Science, covering:
+Prototype a **DataHub Risk & Customer Insights** :
 
 * **Data ingestion & preparation** (accounts, transactions, KYC) in Python & SQL
 * **Building a Risk & Customer Analytics datamart** (star schema)
