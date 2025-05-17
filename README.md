@@ -131,16 +131,13 @@ bnpp-risk-insights/
 9. **Start the API**
 
    ```bash
+   cd src
    python -m uvicorn src.app:app --reload --host 0.0.0.0 --port 8000
    ```
 
    > Access the docs at `http://localhost:8000/docs`
-10. **Run unit tests**
-
-    ```bash
-    pytest --maxfail=1 -q
-    ```
-11. **Docker**
+ 
+10. **Docker**
 
     ```bash
     docker build -t risk-insights:latest .
