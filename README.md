@@ -1,7 +1,7 @@
 # 🚀 DataHub Risk & Customer Insights
 
 
-
+## Plan  :
 * Data ingestion & preparation
 * Analytics datamart (star schema)
 * Interactive reporting & dashboards
