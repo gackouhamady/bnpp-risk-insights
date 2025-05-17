@@ -19,5 +19,11 @@ data/raw
 .idea/
 *.log
 
+data/
+mlruns/
+
+data
+mlruns
+
 
 
