@@ -104,3 +104,16 @@ bnpp-risk-insights/
    └─ Git conventions and code reviews
 
 ```
+
+## Data Ethics
+
+This project uses **synthetic** data generated for demonstration and testing purposes only. No real client information is involved. We adhere to the following principles:
+
+- **Privacy by Design**: All data fields (names, dates, amounts) are fictitious and cannot be traced to any individual.  
+- **Anonymization**: Any resemblance to real persons or accounts is purely coincidental.  
+- **Bias Awareness**: Synthetic data distributions are designed to be as neutral as possible; however, they may not reflect real-world complexities.  
+- **Transparency**: All data generation scripts and transformation steps are open-source and documented.  
+- **Compliance**: This prototype respects GDPR principles—no personal data is used, stored, or shared.  
+
+By using simulated datasets, we ensure ethical experimentation without risk to personal privacy or regulatory compliance.```
+
