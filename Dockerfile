@@ -1,22 +1,26 @@
-# Use an official Python runtime as a parent image
- 
-# Use a more secure base image
-FROM python:3.9-slim-bullseye  
+# --- Étape 1 : build de l’environnement
+FROM python:3.10-slim AS builder
 
-# Set the working directory in the container
 WORKDIR /app
 
-# Copy the current directory contents into the container at /app
-COPY . /app
-
-# Install any needed packages specified in requirements.txt
+# Copier requirements et installer en cache
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Make port 80 available to the world outside this container
-EXPOSE 80
+# --- Étape 2 : copy du code
+FROM python:3.10-slim
 
-# Define environment variable
-ENV NAME World
+WORKDIR /app
 
-# Run app.py when the container launches
-CMD ["python", "app.py"]
+# Copier l’environnement préinstallé
+COPY --from=builder /usr/local/lib/python3.10/site-packages /usr/local/lib/python3.10/site-packages
+COPY --from=builder /usr/local/bin /usr/local/bin
+
+# Copier le code source
+COPY . .
+
+# Exposer le port FastAPI
+EXPOSE 8000
+
+# Commande par défaut : démarre l’API
+CMD ["uvicorn", "src.app:app", "--host", "0.0.0.0", "--port", "8000"]

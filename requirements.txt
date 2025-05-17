@@ -12,3 +12,4 @@ pytest        # Outil de test Python simple et puissant pour écrire et exécute
 faker         # Bibliothèque pour générer des données factices (fake data) pour les tests et le développement.
 pyodbc        # Connecteur Python pour ODBC, permettant de se connecter à des bases de données via ODBC.
 
+
